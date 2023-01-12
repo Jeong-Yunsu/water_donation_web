@@ -62,7 +62,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="section_btn">
                 <c:choose>
                     <c:when test="${user.mbr_sn == null}">
@@ -72,6 +71,19 @@
                         <a href='/viewinputdona?n=${view.cntr_sn}' class="bt donate jq_donate" data-google="모금함_View" data-stat="기부하기_상단_BTN_CLK" >모금함 기부하기</a>
                     </c:otherwise>
                 </c:choose>
+            </div>
+            <div class="section_title" style="height: 500px;">
+                <p class="brk">여러분들의 소중한 참여</p>
+                <p>총 ${breakdownSum.breakdownSum}건이 기부되었습니다.</p>
+                <hr style="border: solid 0.5px #ccc; margin-bottom: 8px; margin-top: 8px">
+                <c:forEach items="${breakdown}" var="breakdown">
+                    <p><fmt:formatDate value="${breakdown.rgtr_dt}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
+                    <p class="brk2">
+                        <span class="ncnm">${breakdown.mbr_ncnm}</span>
+                        <span class="btr_pc"><fmt:formatNumber value="${breakdown.btr_pc}" pattern="###,###,###"/></span>
+                        <span>원</span>
+                    </p>
+                </c:forEach>
             </div>
         </div>
     </div>
