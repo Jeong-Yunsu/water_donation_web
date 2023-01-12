@@ -57,4 +57,19 @@
                            ON a.cntr_sn = b.cntr_sn
     </select>
 
+    <!-- 모금 내역 -->
+    <select id="breakdown" resultType="com.example.water_web.Vo.DonaVo">
+        SELECT a.mbr_ncnm ,b.btr_pc, b.rgtr_dt
+        from tb_mbr AS a
+                 LEFT JOIN tb_cntr_btr AS b
+                           ON a.mbr_sn = b.mbr_sn
+        where cntr_sn = #{cntr_sn}
+    </select>
+    <!-- 총 모금 내역 -->
+    <select id="breakdownSum" resultType="com.example.water_web.Vo.DonaVo">
+        SELECT cntr_sn, count(cntr_sn) as breakdownSum
+        from tb_cntr_btr
+        where cntr_sn = #{cntr_sn}
+    </select>
+
 </mapper>

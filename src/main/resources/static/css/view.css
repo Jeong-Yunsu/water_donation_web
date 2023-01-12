@@ -100,7 +100,7 @@ ol, ul{
 }
 
 .section_title {
-    margin-left: 60px;
+    margin-left: 26px;
 }
 .content_side .tit {
     padding-top: 96px;
@@ -236,3 +236,22 @@ div {
     -webkit-animation: animate-width 1.5s both;
     animation: animate-width 1.5s both;
 }
+
+/* 참여 내역 */
+.content_side .brk {
+    padding-top: 111px;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+.content_side .brk2 {
+    padding-top: 8px;
+    padding-bottom: 37px;
+    font-size: 18px;
+}
+.content_side .brk2 .ncnm {
+    margin-right: 40px;
+    font-weight: bold;
+}
+.content_side .brk2 .btr_pc {
+     font-weight: bold;
+ }
