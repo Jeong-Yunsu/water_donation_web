@@ -68,4 +68,15 @@ public class DonaServiceImpl implements DonaService {
     public List<DonaVo> donaMlrd(DonaVo vo) throws Exception {
         return dao.donaMlrd(vo);
     }
+
+    // 기부 내역 조회
+    @Override
+    public List<DonaVo> breakdown(int cntr_sn) throws Exception {
+        return dao.breakdown(cntr_sn);
+    }
+    // 총 기부 내역 조회
+    @Override
+    public DonaVo breakdownSum(int cntr_sn) throws Exception {
+        return dao.breakdownSum(cntr_sn);
+    }
 }

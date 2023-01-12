@@ -30,4 +30,9 @@ public interface DonaService {
 
     // 기간 지난 전체 기부 리스트
     List<DonaVo> donaMlrd(DonaVo vo) throws Exception;
+
+    // 기부 내역 조회
+    List<DonaVo> breakdown(int cntr_sn) throws Exception;
+    // 총 기부 내역 조회
+    DonaVo breakdownSum(int cntr_sn) throws Exception;
 }

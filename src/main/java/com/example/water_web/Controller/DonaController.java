@@ -46,11 +46,20 @@ public class DonaController {
         DonaVo view = service.donasView(cntr_sn);
         model.addAttribute("view", view);
 
-        DonaVo view2 = service.magaDona(cntr_sn); // 현재 기부액 조회 + 기부율
+        // 현재 기부액 조회 + 기부율
+        DonaVo view2 = service.magaDona(cntr_sn);
         model.addAttribute("view2", view2);
+
+        // 기부 내역 조회
+        List<DonaVo> breakdown = service.breakdown(cntr_sn);
+        model.addAttribute("breakdown", breakdown);
+        // 총 기부 내역 조회
+        DonaVo breakdownSum = service.breakdownSum(cntr_sn);
+        model.addAttribute("breakdownSum", breakdownSum);
+
     }
 
-    // 기부 조회
+    // 기부 내역 조회
     @PostMapping("/view")
     public String postMakeDona(MakeDonaVo vo, GatherDonaVo vo2) throws Exception {
         service.makeDona(vo);

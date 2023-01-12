@@ -42,6 +42,13 @@ public class MlrdController {
         // percent 가져옴
         DonaVo view2 = Donaservice.magaDona(cntr_sn);
         model.addAttribute("view2", view2);
+
+        // 기부 내역 조회
+        List<DonaVo> breakdown = Donaservice.breakdown(cntr_sn);
+        model.addAttribute("breakdown", breakdown);
+        // 총 기부 내역 조회
+        DonaVo breakdownSum = Donaservice.breakdownSum(cntr_sn);
+        model.addAttribute("breakdownSum", breakdownSum);
     }
 
     // 후기글 자세히 페이지 + 댓글 페이지

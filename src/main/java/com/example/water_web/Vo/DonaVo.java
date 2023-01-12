@@ -37,4 +37,9 @@ public class DonaVo {
     private Date rgtr_dt;
     private String mbfr_id;
     private LocalDateTime mbfr_dt;
+
+    // 기부 내역 조회
+    private int btr_pc;
+    private String mbr_ncnm;
+    private int breakdownSum;
 }
