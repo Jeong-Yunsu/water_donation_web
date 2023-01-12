@@ -8,6 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>진행중인 기부 자세히</title>
     <link rel="stylesheet" href="css/view.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +75,11 @@
             </div>
             <div class="section_title" style="height: 500px;">
                 <p class="brk">여러분들의 소중한 참여</p>
-                <p>총 ${breakdownSum.breakdownSum}건이 기부되었습니다.</p>
+                <p>
+                    <span>총</span>
+                    <span style="font-size: 17px"> ${breakdownSum.breakdownSum}</span>
+                    <span>건이 기부되었습니다.</span>
+                </p>
                 <hr style="border: solid 0.5px #ccc; margin-bottom: 8px; margin-top: 8px">
                 <c:forEach items="${breakdown}" var="breakdown">
                     <p><fmt:formatDate value="${breakdown.rgtr_dt}" pattern="yyyy-MM-dd HH:mm:ss" /></p>

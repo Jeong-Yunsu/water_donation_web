@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="/css/indexregister.css" />
     <link rel="stylesheet" href="/css/signup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>

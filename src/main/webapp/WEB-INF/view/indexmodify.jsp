@@ -12,6 +12,7 @@
     <script type="text/javascript" src="/js/delOk.js" defer></script>
 
     <link rel="stylesheet" href="css/indexmodify.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 
@@ -89,13 +90,13 @@
 
                     <div class="adres_wrap2">
                         <label>주소 등록</label>
-                        <input class="adres_input2" style="width: 50%" type="text" id="sample4_postcode" placeholder="우편번호" />
-                        <input class="adres_input2" style="width: 30%" type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" /><br>
+                        <input class="adres_input2" style="width: 50%" type="text" id="sample4_postcode" placeholder="우편번호" readonly/>
+                        <input class="adres_input2" style="width: 30%" type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"/><br>
 
-                        <input class="adres_input2" type="text" name="cntr_adres1" id="sample4_roadAddress" placeholder="도로명주소" />
-                        <input class="adres_input2" type="hidden" id="sample4_jibunAddress" placeholder="지번주소" />
+                        <input class="adres_input2" type="text" name="cntr_adres1" id="sample4_roadAddress" placeholder="도로명주소" value="${donas.cntr_adres1}" readonly>
+                        <input class="adres_input2" type="hidden" id="sample4_jibunAddress" placeholder="지번주소" readonly/>
                         <span id="guide" style="color:#999;display:none"></span>
-                        <input class="adres_input2" type="text" name="cntr_adres2" id="sample4_detailAddress" placeholder="상세주소" />
+                        <input class="adres_input2" type="text" name="cntr_adres2" id="sample4_detailAddress" placeholder="상세주소" value="${donas.cntr_adres2}" readonly/>
                         <input type="hidden" id="sample4_extraAddress" placeholder="참고항목">
                         <%--                        <input type="hidden" id="cntr_adres" name="cntr_adres" value="" >--%>
                     </div>

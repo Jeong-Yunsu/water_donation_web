@@ -10,6 +10,7 @@
     <title>진행중인 기부 현황</title>
     <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/donainglist.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>

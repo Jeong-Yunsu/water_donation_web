@@ -11,6 +11,7 @@
     <script type="text/javascript" src="/js/adres.js" defer></script>
 
     <link rel="stylesheet" href="css/viewinputdona.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>

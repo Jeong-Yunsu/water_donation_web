@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <title>indexaside</title>
     <link rel="stylesheet" href="css/indexaside.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <aside>

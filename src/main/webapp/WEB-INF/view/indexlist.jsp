@@ -7,9 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>기부글 목록</title>
     <link rel="stylesheet" href="css/indexregister.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <style>
     table {width: 1180px; margin-top: 10px; text-align: center; border-spacing: 10px}
+    *{ font-family: 'Nanum Gothic', cursive;}
 </style>
 
 <body>

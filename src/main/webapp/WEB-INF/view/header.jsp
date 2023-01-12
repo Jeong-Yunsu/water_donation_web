@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <title>header</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <style>
         .loginlogout {
             border: none;
@@ -14,6 +15,9 @@
             font-size: 17px;
             cursor: pointer;
             margin: 10px;
+        }
+        *{
+            font-family: 'Nanum Gothic', cursive;
         }
     </style>
 </head>

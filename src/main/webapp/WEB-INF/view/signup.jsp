@@ -11,6 +11,7 @@
     <script type="text/javascript" src="/js/signup/brthdy.js" defer></script>
     <script type="text/javascript" src="/js/signup/email.js" defer></script>
     <link rel="stylesheet" href="css/signup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
