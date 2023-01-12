@@ -61,6 +61,7 @@
             cntr_obctr = #{cntr_obctr},
             cntr_category = #{cntr_category},
             cntr_category2 = #{cntr_category2},
+            cntr_end_dt = #{cntr_end_dt},
             cntr_adres1 = #{cntr_adres1},
             cntr_adres2 = #{cntr_adres2}
         where cntr_sn = #{cntr_sn}

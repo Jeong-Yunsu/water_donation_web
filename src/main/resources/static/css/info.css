@@ -1,3 +1,7 @@
+* {
+    font-family: 'Nanum Gothic', cursive;
+}
+
 .container .carousel-inner .carousel-item::before {
     content: '';
     width: 100%;

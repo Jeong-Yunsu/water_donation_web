@@ -19,6 +19,7 @@ aside ul li a { display:block; width:100%; padding:10px 0;}
 aside ul li a:hover { background:#eee; }
 a {
     text-decoration: none;
+    font-family: 'Nanum Gothic', cursive;
 }
 li > a {
     text-decoration: none;
