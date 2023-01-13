@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.water_web.Mapper.MapMapper">
+
+<select id="latlng" resultType="com.example.water_web.Vo.DonaVo">
+    select cntr_loc_lat, cntr_loc_lng
+    from tb_cntr
+</select>
+
+</mapper>

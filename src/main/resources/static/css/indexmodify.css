@@ -123,3 +123,23 @@ label {
     border-radius: 7px;
     margin-bottom: 13px;
 }
+
+/* 기부대상 영역 */
+.se_wrap_mod{
+    width: 100%;
+    margin-top: 20px;
+}
+.se_name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.se_input_mod {
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    outline: 1px solid #569a67;
+    border-radius: 7px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

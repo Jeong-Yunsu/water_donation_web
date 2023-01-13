@@ -1,7 +1,14 @@
 *{
     font-family: 'Nanum Gothic', cursive;
 }
-
+body {
+    background-color: whitesmoke;
+    height: 100%;
+}
+.wrapper {
+    position: relative;
+    padding-bottom: 60px;
+}
 div {
     display: block;
 }
@@ -67,9 +74,7 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-.wrap {
-    min-width: 1140px;
-}
+
 .card .card_img {
     vertical-align: top;
 }
@@ -101,9 +106,6 @@ img {
     letter-spacing: -.5px;
     color: #333;
     font-weight: 900;
-}
-body {
-    background-color: whitesmoke;
 }
 
 /* progress bar */

@@ -67,11 +67,16 @@
         where cntr_sn = #{cntr_sn}
     </update>
 
-    <!-- 상품 삭제 -->
+    <!-- 기부 삭제 -->
     <delete id="donasDelete">
         delete from tb_cntr
         where cntr_sn = #{cntr_sn}
     </delete>
+<!--        <update id="donasDelete" parameterType="com.example.water_web.Vo.DonaVo">-->
+<!--            UPDATE tb_cntr-->
+<!--            SET use_yn = 'N'-->
+<!--            WHERE cntr_sn = #{cntr_sn}-->
+<!--        </update>-->
 
     <!-- 기부 소통글 등록 -->
     <insert id="mlrdRegister" parameterType="com.example.water_web.Vo.MlrdVo">
@@ -90,11 +95,29 @@
                  #{cntr_end_dt})
     </insert>
 
-<!--    &lt;!&ndash; 상품 삭제 &ndash;&gt;-->
-<!--    <update id="donasDelete" parameterType="com.example.water_web.Vo.DonaVo">-->
-<!--        UPDATE tb_cntr-->
-<!--        SET use_yn = 'N'-->
-<!--        WHERE cntr_sn = #{cntr_sn}-->
-<!--    </update>-->
+    <!-- 기부 소통글 목록 -->
+    <select id="mlrdList" resultType="com.example.water_web.Vo.MlrdVo">
+        select *
+        from tb_mlrd
+        order by cntr_sn asc
+    </select>
+
+    <!-- 기부 소통글 조회 -->
+    <select id="mlrdView" resultType="com.example.water_web.Vo.MlrdVo">
+        SELECT a.*, b.cntr_sn, b.cntr_ttl
+        from tb_mlrd AS a
+                 LEFT JOIN tb_cntr AS b
+                           ON a.cntr_sn = b.cntr_sn
+        where mlrd_sn = #{mlrd_sn}
+    </select>
+
+    <!-- 기부 소통글 수정 -->
+    <update id="mlrdModify" parameterType="com.example.water_web.Vo.MlrdVo">
+        update tb_mlrd
+        set cntr_sn = #{cntr_sn},
+            mlrd_ttl = #{mlrd_ttl},
+            mlrd_cn = #{mlrd_cn}
+        where mlrd_sn = #{mlrd_sn}
+    </update>
 
 </mapper>
