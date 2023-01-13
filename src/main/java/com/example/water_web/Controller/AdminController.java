@@ -44,7 +44,7 @@ public class AdminController {
     public String postDonasRegister(DonaVo vo) throws Exception {
         adminService.register(vo);
 
-        return "redirect:/index";
+        return "redirect:/indexlist";
     }
 
     // 기부 목록 페이지
@@ -77,16 +77,15 @@ public class AdminController {
     public String postDonasModify(DonaVo vo) throws Exception {
         adminService.donasModify(vo);
 
-        return "redirect:/index";
+        return "redirect:/indexlist";
     }
 
     // 기부 삭제
     @PostMapping("/indexdelete")
-    public String postDonasDelete(@RequestParam("n") int cntr_sn) throws Exception {
-        // @RequestParam("n")으로 인해, URL주소에 있는 n의 값을 가져와 gdsNum에 저장
+    public String postDonasDelete(@RequestParam("n") int cntr_sn) {
         adminService.donasDelete(cntr_sn);
 
-        return "redirect:/index";
+        return "redirect:/indexlist";
     }
 
     // 기부 소통글 등록 페이지
@@ -101,11 +100,39 @@ public class AdminController {
     public String postMlrdRegister(MlrdVo vo) throws Exception {
         adminService.mlrdRegister(vo);
 
-        return "redirect:/index";
+        return "redirect:/indexmlrdlist";
+    }
+
+    // 기부 소통글 목록 페이지
+    @GetMapping("/indexmlrdlist")
+    public void getMlrdList(Model model) throws Exception {
+        List<DonaVo> mlrdlist = adminService.mlrdList();
+        model.addAttribute("mlrdlist", mlrdlist);
+    }
+
+    // 기부 소통글 조회 페이지
+    @GetMapping("/indexmlrdview")
+    public void getMlrdview(@RequestParam("q") int mlrd_sn, Model model) throws Exception {
+        MlrdVo mlrdview = adminService.mlrdView(mlrd_sn);
+        model.addAttribute("mlrdview", mlrdview);
     }
 
 
+    // 기부 소통글 수정 페이지
+    @GetMapping("/indexmlrdmodify")
+    public void getMlrdModify(@RequestParam("n") int mlrd_sn, Model model) throws Exception {
+        MlrdVo mlrdview = adminService.mlrdView(mlrd_sn);
+        model.addAttribute("mlrdview", mlrdview);
 
+        List<DonaVo> list = adminService.donaslist();
+        model.addAttribute("mlrdlist", list);
+    }
 
+    // 기부 소통글 수정
+    @PostMapping("/indexmlrdmodify")
+    public String postMlrdModify(MlrdVo vo) throws Exception {
+        adminService.mlrdModify(vo);
 
+        return "redirect:/indexmlrdlist";
+    }
 }

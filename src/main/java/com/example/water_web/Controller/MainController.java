@@ -31,9 +31,9 @@ public class MainController {
         model.addAttribute("main3", list3);
     }
 
-    @GetMapping("/intro")
+    @GetMapping("/notice")
     public String introPage() {
-        return "intro";
+        return "notice";
     }
 
     @GetMapping("/dona")
@@ -46,8 +46,4 @@ public class MainController {
         return "donaing";
     }
 
-    @GetMapping("/map")
-    public String map() {
-        return "map";
-    }
 }
