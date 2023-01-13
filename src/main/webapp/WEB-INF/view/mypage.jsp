@@ -51,10 +51,11 @@
                     <div class="content_wrap">
                         <label>기부 내역</label>
                         <c:forEach items="${userDonaDate}" var="userDonaDate">
-                            <p class="contents" style="margin-top: 10px; margin-bottom: 15px"><fmt:parseDate value="${userDonaDate.dona_dt}" pattern="yyyy-MM-dd'T'HH:mm" var="parsedDateTime" type="both" />
+                            <hr style="border: solid 0.5px #ccc; margin-bottom: 8px; margin-top: 8px">
+                            <p class="contents" style="margin-top: 10px; margin-bottom: 15px; font-size: 14px"><fmt:parseDate value="${userDonaDate.dona_dt}" pattern="yyyy-MM-dd'T'HH:mm" var="parsedDateTime" type="both" />
                                 <fmt:formatDate pattern="yyyy년 MM월 dd일 H시 mm분" value="${parsedDateTime}"/></p>
-                            <a href="/view?n=${userDonaDate.dona_sn}" style="text-decoration-line: none; color: black;"><p class="contents" style="margin-bottom: 15px">${userDonaDate.dona_ttl}</p></a>
-                            <p class="contents" style="margin-bottom: 80px"><fmt:formatNumber value="${userDonaDate.btr_pc}" pattern="#,###"/>원</p>
+                            <a href="/view?n=${userDonaDate.dona_sn}" style="text-decoration-line: none; color: black; font-weight: bold"><p class="contents" style="margin-bottom: 15px">${userDonaDate.dona_ttl}</p></a>
+                            <p class="contents" style="margin-bottom: 67px"><fmt:formatNumber value="${userDonaDate.btr_pc}" pattern="#,###"/>원</p>
                         </c:forEach>
                     </div>
                 </form>

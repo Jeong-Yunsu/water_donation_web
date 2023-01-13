@@ -19,7 +19,7 @@
 
 <style>
     body {
-        background-color: white;
+        background-color: whitesmoke;
     }
 
     /* progress bar */
@@ -303,6 +303,8 @@
         </li>
     </ul>
 </div>
-
+<div>
+    <%@ include file="footer.jsp"%>
+</div>
 </body>
 </html>

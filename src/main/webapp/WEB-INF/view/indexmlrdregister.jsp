@@ -5,7 +5,7 @@
 <html lang="ko">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>기부글 등록</title>
+    <title>소통글 등록</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- 뭐였지 -->
     <script src="/resources/ckeditor/ckeditor.js"></script> <!-- ck에디터 -->
 
@@ -38,7 +38,7 @@
                                     shiftEnterMode : CKEDITOR.ENTER_P,
                                     // filebrowserUploadUrl : "/admin/goods/ckUpload"
                                 };
-                                CKEDITOR.replace("cntr_cn", ckeditor_config);
+                                CKEDITOR.replace("mlrd_cn", ckeditor_config);
                             </script>
                         </div>
 

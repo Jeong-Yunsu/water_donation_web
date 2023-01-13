@@ -19,18 +19,29 @@
         *{
             font-family: 'Nanum Gothic', cursive;
         }
+        header {
+            width: 100%;
+            height: 64px;
+        }
+        nav {
+            position: relative;
+            margin: 0px auto;
+        }
+        nav ul {
+            position: relative; top: 0; padding-right: 170px;
+        }
     </style>
 </head>
 
 <body>
 
-<header class="site_header" style="width: 100%; height: 64px;">
+<header class="site_header">
     <a href="/main" class="logo">
         logo
     </a>
-    <nav style="position: relative; margin: 0 auto; ">
-        <ul class="menu" style="position: relative; top: 0px; padding-right: 170px">
-            <li><a href="/intro" class="link">소개</a></li>
+    <nav>
+        <ul class="menu">
+            <li><a href="/notice" class="link">공지사항</a></li>
             <li><a href="/donainglistall" class="link">기부 카테고리</a></li>
             <li><a href="/map" class="link">내 주위</a></li>
             <li><a href="#" class="link">기부 스토어</a></li>

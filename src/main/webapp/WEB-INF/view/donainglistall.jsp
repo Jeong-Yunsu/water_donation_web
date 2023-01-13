@@ -34,10 +34,11 @@
         -webkit-animation: animate-width 1.5s both;
         animation: animate-width 1.5s both;
     }
+
 </style>
 
 <body>
-<div class="wrap">
+<div class="wrapper" style="min-height: 100%">
     <div >
         <%@ include file="donaing.jsp"%>
     </div>
@@ -67,6 +68,9 @@
                 </c:forEach>
             </div>
     </div>
+</div>
+<div>
+    <%@ include file="footer.jsp"%>
 </div>
 </body>
 </html>
