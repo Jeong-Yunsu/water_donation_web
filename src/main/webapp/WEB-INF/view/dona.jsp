@@ -13,7 +13,7 @@
 <%@ include file="header.jsp"%>
 
 <div class="site_header" style="width: 100%; height: 64px; margin-top: 2px">
-    <nav style="position: relative; height: 64px;  margin: 0 auto; right:25px">
+    <nav style="position: relative; height: 64px;  margin: 0 auto; left:50px">
         <ul class="menu">
             <li class="link"><a href="/donainglistall">진행중</a></li>
             <li class="link"><a href="/donamlrd">후기</a></li>

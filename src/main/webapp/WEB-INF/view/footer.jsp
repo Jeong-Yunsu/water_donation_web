@@ -10,12 +10,12 @@
     <style>
         footer {
             width: 100%;
-            min-height: 200px;
-            margin-top: 51px;
-            padding: 25px 0 50px 67px;
+            min-height: 180px;
+            margin-top: 40px;
+            padding: 30px 50px 30px 50px;
             position: absolute;
             z-index: 9;
-            background-color: #fff;
+            background-color: white;
             border-top: 1px solid #f1f1f1;
             box-sizing: border-box;
         }
@@ -23,11 +23,11 @@
         footer a {
             display: inline-block;
             margin: 15px 20px 10px 20px;
-            color: #808080; font-size: 16px;
+            color: gray; font-size: 16px;
         }
 
         footer a:visited {
-            color: #808080;
+            color: gray;
         }
 
         footer p {
@@ -52,7 +52,7 @@
         <span>© CHERRY Corp. All rights reserved.</span>
     </p>
     <nav>
-        <a href="https://github.com/whatpill1/water_web_ver3.git">저희의 Github가 궁금하시다구요?</a>
+        <a href="https://github.com/whatpill1/water_web_ver3.git" style="text-decoration-line: none;">저희의 Github가 궁금하시다구요?</a>
     </nav>
 </footer>
 </body>

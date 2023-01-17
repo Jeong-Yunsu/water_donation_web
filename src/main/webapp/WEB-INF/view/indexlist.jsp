@@ -42,7 +42,7 @@
                         <tr>
                             <td>${list.cntr_sn}</td>
                             <td style="text-align: left">
-                                <a href="indexview?n=${list.cntr_sn}">${list.cntr_ttl}</a>
+                                <a style="text-decoration: none; color: black; font-weight: bold" href="indexview?n=${list.cntr_sn}">${list.cntr_ttl}</a>
                             </td>
     <%--                        <td>${list.cntr_cn}</td>--%>
                             <td><fmt:formatNumber value="${list.cntr_obctr}" pattern="###,###,###"/></td>

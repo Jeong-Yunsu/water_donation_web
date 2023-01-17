@@ -61,11 +61,11 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/fox.jpg" width="1100" height="500">
+                <img src="images/goa.jpg" width="1100" height="500">
                 <div class="info" style="position: absolute">
-                    <p class="name">여우는 줠라 귀엽습니다.</p>
-                    <p class="group">인정 하십니까?</p>
-                    <p class="d-day">인정 합니다.</p>
+                    <p class="name">희망을 전해주세요.</p>
+                    <p class="group">4년 연속 비가 거의 내리지 않는 아프리카 지역</p>
+                    <p class="d-day">5년 연속으로 우기 때 비가 거의 내이지 않을 것이라는 예측이 나오면서 아프리카의 뿔 지역에는 더 많은 식량 지원이 필요한 상황입니다.</p>
                     <div class="progressBar">
                         <span class="bar chartAnimate active" style="width: 19%"></span>
                     </div>
@@ -76,11 +76,12 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/fox2.jpg"  width="1100" height="500">
+                <img src="images/noinpok.jpg"  width="1100" height="500">
                 <div class="info" style="position: absolute">
-                    <p class="name">여우는 줠라 귀엽습니다.</p>
-                    <p class="group">인정 하십니까?</p>
-                    <p class="d-day">인정 합니다.</p>
+                    <p class="name">폭력을 멈춰주세요.</p>
+                    <p class="group">"내가 뭘 그렇게 잘못했니?..</p>
+                    <p class="d-day">부모들은 자녀가 분노 폭발하며 자신을 공격하는 태도 변화에 놀라며 ”사느라 너희들 마음을 챙길 여유가 없었어.“ ”그때는 다 그렇게 했어.“
+                        <br>”내가 뭘 몰랐어.!“ 같은 말로 자기 합리화를 하지만 자녀와의 관계에 도움이 되지 않습니다.</p>
                     <div class="progressBar">
                         <span class="bar chartAnimate active" style="width: 19%"></span>
                     </div>
@@ -91,11 +92,11 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/tiger.jpg"  width="1100" height="500">
+                <img src="images/solo.jpg"  width="1100" height="500">
                 <div class="info" style="position: absolute">
-                    <p class="name">여우는 줠라 귀엽습니다.</p>
-                    <p class="group">인정 하십니까?</p>
-                    <p class="d-day">인정 합니다.</p>
+                    <p class="name">외로움에 놓인 노인들을 위한 특별한 지원</p>
+                    <p class="group">"심장 마비가 왔을 때, 이 버튼을 눌렀고, 몇 분 안에 구급차가 와서 저는 살았어요.</p>
+                    <p class="d-day">누군가는 다시 삶을 살아갈 수 있는 계기가 될 수도 있는 이 따뜻하고 아름다운 나눔에 함게 마음 모아주시길 부탁드립니다.</p>
                     <div class="progressBar">
                         <span class="bar chartAnimate active" style="width: 19%"></span>
                     </div>
@@ -219,7 +220,7 @@
 
 <div class="Maincardarea">
     <h3 class="Maincardarea_text">
-        <a href="#" class="Maincardarea_link" style="text-decoration: none; color: inherit;" > 기부 목록 <i class="Maincarearea_icon"></i></a>
+        <a href="#" class="Maincardarea_link" style="text-decoration: none; color: inherit;" > 기부금으로 기부하기 <i class="Maincarearea_icon"></i></a>
     </h3>
     <ul class="Donacard_list">
         <li style="display: inline-block; vertical-align: top;">
@@ -248,7 +249,7 @@
 
 <div class="Maincardarea">
     <h3 class="Maincardarea_text">
-        <a href="#" class="Maincardarea_link" style="text-decoration: none; color: inherit;" > 대충 재능 기부 <i class="Maincarearea_icon"></i></a>
+        <a href="#" class="Maincardarea_link" style="text-decoration: none; color: inherit;" > 당신의 재능을 나눠주세요 <i class="Maincarearea_icon"></i></a>
     </h3>
     <ul class="Donacard_list">
         <li style="display: inline-block; vertical-align: top;">
@@ -277,7 +278,7 @@
 
 <div class="Maincardarea">
     <h3 class="Maincardarea_text">
-        <a href="#" class="Maincardarea_link" style="text-decoration: none; color: inherit;" > 자투리 상품 기부 <i class="Maincarearea_icon"></i></a>
+        <a href="#" class="Maincardarea_link" style="text-decoration: none; color: inherit;" > 안쓰는 물품들을 전달해 보아요 <i class="Maincarearea_icon"></i></a>
     </h3>
     <ul class="Donacard_list">
         <li style="display: inline-block; vertical-align: top;">

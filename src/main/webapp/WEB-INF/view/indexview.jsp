@@ -97,3 +97,18 @@
 
 </body>
 </html>
+
+<script>
+    var formObj = $("form[role='form']");
+
+    $("#delete_Btn").click(function(){
+
+        var con = confirm("정말로 삭제하시겠습니까?");
+
+        if(con) {
+            formObj.attr("action", "/indexdelete");
+            formObj.submit();
+        }
+    });
+
+</script>

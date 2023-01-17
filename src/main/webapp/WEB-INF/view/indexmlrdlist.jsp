@@ -23,7 +23,7 @@
         <form role="form" method="post" autocomplete="off">
             <div class="wrap">
                 <h2>기부글 목록</h2>
-                <table>
+                <table style="width: 100%">
                     <thead>
                     <tr>
                         <th>기부글 번호</th>
@@ -37,7 +37,7 @@
                         <tr>
                             <td>${mlrdlist.cntr_sn}</td>
                             <td>${mlrdlist.mlrd_sn}</td>
-                            <td style="text-align: left">
+                            <td style="text-align: left; width: 100%">
                                 <a href="indexmlrdview?q=${mlrdlist.mlrd_sn}">${mlrdlist.mlrd_ttl}</a>
                             </td>
     <%--                        <td>${list.cntr_cn}</td>--%>

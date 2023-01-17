@@ -74,11 +74,11 @@
                     <input class="user_input" type="text" id="cntr_obctr" name="cntr_obctr" />
                 </div>
 
-<%--                        <!-- 파일 업로드좀;;;; -->--%>
-<%--                        <div class="user_wrap">--%>
-<%--                            <label>사진</label>--%>
-<%--                            <input class="user_input" type="file" id="file" name="file" />--%>
-<%--                        </div>--%>
+                <!-- 파일 업로드좀;;;; -->
+                <div class="user_wrap">
+                    <label>사진</label>
+                    <input class="user_input" type="file" id="file" name="file" />
+                </div>
 
                 <!-- 모금 마감날짜;;;; -->
                 <div class="user_wrap">

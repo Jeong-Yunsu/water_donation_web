@@ -36,10 +36,10 @@
                             <tbody>
                             <c:forEach items="${viewmlrdlist}" var="viewmlrdlist">
                             <tr>
-                                <td style="padding-right: 350px; margin-bottom: 10px">
-                                    <a href="viewmlrd?q=${viewmlrdlist.mlrd_sn}">${viewmlrdlist.mlrd_ttl}</a>
+                                <td style="padding-right: 85px; margin-bottom: 10px">
+                                    <a href="viewmlrd?q=${viewmlrdlist.mlrd_sn}" style="font-size: 20px">${viewmlrdlist.mlrd_ttl}</a>
                                 </td>
-                                <td><fmt:formatDate value="${viewmlrdlist.rgtr_dt}" pattern="yyyy-MM-dd HH:mm:ss" /></td>
+                                <td style="right: 10px"><fmt:formatDate value="${viewmlrdlist.rgtr_dt}" pattern="yyyy-MM-dd HH:mm:ss" /></td>
                             </tr>
                             </tbody>
                             </c:forEach>

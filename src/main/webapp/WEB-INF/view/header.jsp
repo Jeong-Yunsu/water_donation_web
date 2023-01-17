@@ -44,7 +44,7 @@
             <li><a href="/notice" class="link">공지사항</a></li>
             <li><a href="/donainglistall" class="link">기부 카테고리</a></li>
             <li><a href="/map" class="link">내 주위</a></li>
-            <li><a href="#" class="link">기부 스토어</a></li>
+            <li><a href="/store" class="link">기부 스토어</a></li>
         </ul>
     </nav>
     <div style="position: absolute; top: 10px; right: 0px; float: right; text-align:center ; width: 500px">
