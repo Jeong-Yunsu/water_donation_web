@@ -93,7 +93,7 @@
                            ON a.mbr_sn = b.mbr_sn
                  LEFT JOIN tb_cntr AS c
                            ON b.cntr_sn = c.cntr_sn
-        WHERE a.mbr_sn = 4
+        WHERE a.mbr_sn = #{mbr_sn}
         ORDER BY dona_dt DESC
     </select>
 </mapper>
