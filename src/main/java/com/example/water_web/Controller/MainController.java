@@ -46,4 +46,9 @@ public class MainController {
         return "donaing";
     }
 
+    @GetMapping("/store")
+    public String toStore() {
+        return "store";
+    }
+
 }
