@@ -64,7 +64,7 @@ public class MlrdController {
         model.addAttribute("comt", comt);
     }
 
-    // 댓글 작성
+    // 댓글 작성 post
     @PostMapping("/viewmlrd")
     public String PostMlrdComt(ComtVo comt, HttpSession session) throws Exception {
 

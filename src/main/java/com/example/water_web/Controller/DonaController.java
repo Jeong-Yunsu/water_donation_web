@@ -24,7 +24,7 @@ public class DonaController {
     @Autowired
     private UserService userService;
 
-    // 기간 남은 전체 기부 리스트
+    // 기간 남은 전체 기부 리스트 페이지
     @GetMapping("/donainglistall")
     public void getListall(DonaVo vo, Model model) throws Exception {
         List<DonaVo> list = null;
@@ -32,7 +32,7 @@ public class DonaController {
         model.addAttribute("donainglistall", list);
     }
 
-    // 기간 남은 카테고리별 기부 리스트
+    // 기간 남은 카테고리별 기부 리스트 페이지
     @GetMapping("/donainglist")
     public void getList(@RequestParam("c") int cntr_category, Model model) throws Exception {
         List<DonaVo> list = null;
@@ -43,6 +43,7 @@ public class DonaController {
     // 기부 조회 페이지
     @GetMapping("/view")
     public void getView(@RequestParam("n") int cntr_sn, Model model) throws Exception {
+        // 기부글 조회
         DonaVo view = service.donasView(cntr_sn);
         model.addAttribute("view", view);
 
@@ -53,13 +54,14 @@ public class DonaController {
         // 기부 내역 조회
         List<DonaVo> breakdown = service.breakdown(cntr_sn);
         model.addAttribute("breakdown", breakdown);
+
         // 총 기부 내역 조회
         DonaVo breakdownSum = service.breakdownSum(cntr_sn);
         model.addAttribute("breakdownSum", breakdownSum);
 
     }
 
-    // 기부 내역 조회
+    // 기부 조회 post
     @PostMapping("/view")
     public String postMakeDona(MakeDonaVo vo, GatherDonaVo vo2) throws Exception {
         service.makeDona(vo);
@@ -79,7 +81,7 @@ public class DonaController {
         model.addAttribute("viewinput", viewinput);
     }
 
-    // 기부금 등록 + 기부금 모으기
+    // 기부금 등록 + 기부금 모으기 post
     @PostMapping("/viewinputdona")
     public String postMaGaDona(MakeDonaVo vo, GatherDonaVo vo2) throws Exception {
         service.makeDona(vo);
@@ -88,7 +90,7 @@ public class DonaController {
         return "redirect:/main";
     }
 
-    // 기간 지난 전체 기부 리스트
+    // 기간 지난 전체 기부 리스트 page
     @GetMapping("/donamlrd")
     public void getDonaMlrd(DonaVo vo, Model model) throws Exception {
         List<DonaVo> list = null;

@@ -33,6 +33,7 @@ public interface DonaMapper {
 
     // 기부 내역 조회
     List<DonaVo> breakdown(int cntr_sn) throws Exception;
+
     // 총 기부 내역 조회
     DonaVo breakdownSum(int cntr_sn) throws Exception;
 }

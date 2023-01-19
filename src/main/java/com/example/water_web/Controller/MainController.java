@@ -31,21 +31,23 @@ public class MainController {
         model.addAttribute("main3", list3);
     }
 
+    // 공지사항
     @GetMapping("/notice")
     public String introPage() {
         return "notice";
     }
 
-    @GetMapping("/dona")
-    public String toDona() {
-        return "dona";
-    }
-
-    @GetMapping("/donaing")
-    public String toDonaIng() {
-        return "donaing";
-    }
-
+//    @GetMapping("/dona")
+//    public String toDona() {
+//        return "dona";
+//    }
+//
+//    @GetMapping("/donaing")
+//    public String toDonaIng() {
+//        return "donaing";
+//    }
+    
+    // 스토어
     @GetMapping("/store")
     public String toStore() {
         return "store";

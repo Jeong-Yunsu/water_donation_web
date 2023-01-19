@@ -27,7 +27,7 @@ public class AdminServiceImpl implements AdminService{
         return dao.ctgry();
     }
 
-    // 기부 등록
+    // 기부글 등록
     @Override
     public void register(DonaVo vo) throws Exception {
         int cntr_sn = vo.getCntr_sn();
@@ -40,31 +40,31 @@ public class AdminServiceImpl implements AdminService{
         dao.register(vo);
     }
 
-    // 기부 목록
+    // 기부글 목록
     @Override
     public List<DonaVo> donaslist() throws Exception {
         return dao.donaslist();
     }
 
-    // 기부 조회
+    // 기부글 조회
     @Override
     public DonaVo donasView(int cntr_sn) throws Exception {
         return dao.donasView(cntr_sn);
     }
 
-    // 기부 수정
+    // 기부글 수정
     @Override
     public void donasModify(DonaVo vo) throws Exception {
         dao.donasModify(vo);
     }
 
-    // 기부 삭제
+    // 기부글 삭제
     @Override
-    public void donasDelete(int cntr_sn) {
+    public void donasDelete(int cntr_sn) throws Exception {
         dao.donasDelete(cntr_sn);
     }
 
-    // 소통 등록
+    // 소통글 등록
     @Override
     public void mlrdRegister(MlrdVo vo) throws Exception {
         int cntr_sn = vo.getCntr_sn();
@@ -76,19 +76,19 @@ public class AdminServiceImpl implements AdminService{
         dao.mlrdRegister(vo);
     }
 
-    // 소통 목록
+    // 소통글 목록
     @Override
     public List<DonaVo> mlrdList() throws Exception {
         return dao.mlrdList();
     }
 
-    // 소통 조회
+    // 소통글 조회
     @Override
     public MlrdVo mlrdView(int mlrd_sn) throws Exception {
         return dao.mlrdView(mlrd_sn);
     }
 
-    // 소통 수정
+    // 소통글 수정
     @Override
     public void mlrdModify(MlrdVo vo) throws Exception {
         dao.mlrdModify(vo);

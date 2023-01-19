@@ -33,7 +33,7 @@ public class UserController {
         return "signup";
     }
 
-    // 회원가입
+    // 회원가입 post
     @PostMapping("/signup")
     public String signUp(UserVo userVo) {
 
@@ -58,7 +58,7 @@ public class UserController {
         return "login"; // 로그인되지 않은 상태
     }
 
-    // 로그인
+    // 로그인 post
     @PostMapping("/login")
     public String login(UserVo userVo, ModelMap model, HttpSession session) {
         String mbr_id = userVo.getMbr_id();
@@ -88,7 +88,7 @@ public class UserController {
         return "redirect:/main";
     }
 
-    // 로그아웃
+    // 로그아웃 post
     @PostMapping("/logout")
     public String logout(HttpSession session) {
         session.invalidate();
@@ -104,7 +104,7 @@ public class UserController {
         return "update";
     }
 
-    // 회원 정보 수정
+    // 회원 정보 수정 post
     @PostMapping("/update")
     public String modifyInfo(HttpSession session, UserVo userVo) {
         Integer sn = (Integer) session.getAttribute("userSn");
@@ -113,7 +113,7 @@ public class UserController {
         return "redirect:/mypage";
     }
 
-    // 회원 탈퇴
+    // 회원 탈퇴 post
     @PostMapping("/delete")
     public String withdraw(HttpSession session) {
         Integer sn = (Integer) session.getAttribute("userSn");
@@ -136,6 +136,7 @@ public class UserController {
         model.addAttribute("userDonaDate", userDonaDate);
         return "mypage";
     }
+
 
     //아이디 중복체크
     @Autowired
